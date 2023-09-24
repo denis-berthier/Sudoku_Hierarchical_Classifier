@@ -14,7 +14,7 @@ For a much shorter (almost) self-contained introduction to them and for the anal
 As SHC is a Java program, you must first make sure you have Java installed on your machine.<br>
 The executable version of the SHC is a typical .jar file, SHC.jar, in the SHC root directory. As such, it is launched in that directory, in a standard way, by the following command line:<br>
 
-**java -jar SHC.jar \<classif\> (-examples) (-input \<input-file\>) (-output \<output-file\>) (-max-length \<chain-max-length\>) (-max-time \<max-time\>) (-buffer-size \<buffer-size\> (\<puzzle>\)**<br>
+**java -jar SHC.jar \<classif\> (-examples) (-input \<input-file\>) (-output \<output-file\>) (-max-length \<chain-max-length\>) (-max-time \<max-time\>) (-buffer-size \<buffer-size\> (\<puzzle>\)**<br><br>
 where:<br>
 –	parts within parentheses are optional;<br>
 –	a - sign at the start of a keyword recalls that the choice is possible but not mandatory;<br>
