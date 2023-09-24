@@ -1,7 +1,7 @@
 # Sudoku_Hierarchical_Classifier
-**Outputs the universal T&amp;E-classification of Sudoku puzzles and their B, BpB or BpBB sub-classifications**<br><br>
+**Computes the universal T&amp;E-classification of Sudoku puzzles and their B, BpB or BpBB sub-classifications**<br><br>
 
-### Author: François Cordoliani.
+### Author of the SHC: François Cordoliani
 The development of the SHC was based on the same references as CSP-Rules or SudoRules (recalled at the end) but the implementations were totally independent.<br>
 All the classification results of the SHC and of SudoRules completely coincide on the large collections of puzzles used to compare them.<br>
 The SHC is much faster than SudoRules for the functionalities it implements. <br>
@@ -12,7 +12,7 @@ For a much shorter (almost) self-contained introduction to them and for the anal
 ### Running the SHC
 
 As SHC is a Java program, you must first make sure you have Java installed on your machine.<br>
-The SHC is delivered as a typical .jar file in the SHC root directory. As such, it is launched in that directory, in a standard way, by the following command line:<br>
+The executable version of the SHC is a typical .jar file, SHC.jar, in the SHC root directory. As such, it is launched in that directory, in a standard way, by the following command line:<br>
 
 **java -jar SHC.jar \<classif\> (-examples) (-input \<input-file\>) (-output \<output-file\>) (-max-length \<chain-max-length\>) (-max-time \<max-time\>) (-buffer-size \<buffer-size\> (\<puzzle>\)**<br>
 where:<br>
