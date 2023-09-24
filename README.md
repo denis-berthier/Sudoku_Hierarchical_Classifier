@@ -1,10 +1,13 @@
 # Sudoku_Hierarchical_Classifier
-Outputs the universal T&amp;E-classification of Sudoku puzzles and their B, BpB or BpBB sub-classifications<br>
+**Outputs the universal T&amp;E-classification of Sudoku puzzles and their B, BpB or BpBB sub-classifications**<br><br>
 
 ### Author: François Cordoliani.
-The development of the SHC was based on the same references as SudoRules (recalled at the end) but the implementations were independent.<br>
+The development of the SHC was based on the same references as CSP-Rules or SudoRules (recalled at the end) but the implementations were totally independent.<br>
 All the classification results of the SHC and of SudoRules completely coincide on the large collections of puzzles used to compare them.<br>
-The SHC is much faster for the functionalities it implements.
+The SHC is much faster than SudoRules for the functionalities it implements. <br>
+It is hoped that the T&E-depth and BpB parts will be very useful in the search for the "hardest" puzzles.<br><br>
+For full details about the concepts and theories underlying the SHC, see [CRT] or [PBCS].<br>
+For a much shorter (almost) self-contained introduction to them and for the analysis of some of the SHC results, see [SHC].<br><br>
 
 ### Running the SHC
 
@@ -21,7 +24,7 @@ where:<br>
 –	\<chain-max-length\> is an integer, the maximal length allowed for chains (i.e. for braids); this option is allowed only when \<classif\>=B, in which case the default value is 9; the purpose is to avoid too long calculations of the B rating for very hard puzzles; note that pre-checking that the puzzle(s) is (are) in T&E(1) is under the user’s responsibility;<br>
 –	\<max-time\> is the maximum time, in minutes, allowed for the computation of each puzzle in the input file (with default value unrestricted);
 –	\<buffer-size\> is an integer defining the maximum number of internal chains the program can store; default value is 50,000; change it only if its is too small (which can happen only in the \<classif\> = B case);<br>
-–	\<puzzle\> is all that remains in the command line after all the options (but only the first 81 caracters after the space following the last option are effectively considered); \<puzzle\> is the standard line representation of a sudoku puzzle; if \<puzzle\> is present, -example may not be selected and no -input or -output may be specified.<br>
+–	\<puzzle\> is all that remains in the command line after all the options (but only the first 81 caracters after the space following the last option are effectively considered); \<puzzle\> is the standard line representation of a sudoku puzzle; if \<puzzle\> is present, -example may not be selected and no -input or -output may be specified.<br><br>
 
 
 ### References
@@ -30,5 +33,6 @@ where:<br>
 [PBCS1]: BERTHIER D., Pattern-Based Constraint Satisfaction and Logic Puzzles (First Edition), Lulu Press, November 2012.<br>
 [PBCS2]: BERTHIER D., Pattern-Based Constraint Satisfaction and Logic Puzzles (Second Edition), Lulu Press, July 2015.<br>
 [PBCS3]: BERTHIER D., Pattern-Based Constraint Satisfaction and Logic Puzzles (Third Edition), Lulu Press, Novembre 2021.<br>
+[PBCS]: any of [PBCS1], [PBCS2] or [PBCS3].<br>
 [SHC]: BERTHIER D., The Sudoku Hierarchical Classifier, Lulu Press, October 2023.<br>
 [UMRN]: BERTHIER D., User Manual and Research Notebooks for CSP-Rules, Lulu Press, Juillet 2023.<br>
