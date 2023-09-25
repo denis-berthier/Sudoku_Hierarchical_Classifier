@@ -7,7 +7,7 @@ All the classification results of the SHC and of SudoRules completely coincide o
 The SHC is much faster than SudoRules for the functionalities it implements. <br>
 It is hoped that the T&E-depth and BpB parts will be very useful in the search for the "hardest" puzzles.<br><br>
 For full details about the concepts and theories underlying the SHC, see [CRT] or [PBCS].<br>
-For a much shorter (almost) self-contained introduction to them and for the analysis of some of the SHC results, see [ISHC].<br><br>
+For a much shorter (almost) self-contained introduction to them and for the analysis of some of the SHC results, see [HCCS].<br><br>
 
 ### Running the SHC
 
@@ -36,9 +36,9 @@ For details about the examples, see [ISHC].<br><br>
 ### References
 
 [CRT]: BERTHIER D., Constraint Resolution Theories, Lulu.com Publishers, November 2011.<br>
+[HCCS]: BERTHIER D., Hierarchical Classifications in Constraint Satisfaction, Lulu Press, October 2023.<br>
 [PBCS1]: BERTHIER D., Pattern-Based Constraint Satisfaction and Logic Puzzles (First Edition), Lulu Press, November 2012.<br>
 [PBCS2]: BERTHIER D., Pattern-Based Constraint Satisfaction and Logic Puzzles (Second Edition), Lulu Press, July 2015.<br>
 [PBCS3]: BERTHIER D., Pattern-Based Constraint Satisfaction and Logic Puzzles (Third Edition), Lulu Press, Novembre 2021.<br>
 [PBCS]: any of [PBCS1], [PBCS2] or [PBCS3].<br>
-[ISHC]: BERTHIER D., Introduction to the Sudoku Hierarchical Classifier, Lulu Press, October 2023.<br>
 [UMRN]: BERTHIER D., User Manual and Research Notebooks for CSP-Rules, Lulu Press, Juillet 2023.<br>
