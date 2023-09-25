@@ -9,6 +9,32 @@ It is hoped that the T&E-depth and BpB parts will be very useful in the search f
 For full details about the concepts and theories underlying the SHC, see [CRT] or [PBCS].<br>
 For a much shorter (almost) self-contained introduction to them and for the analysis of some of the SHC results, see [HCCS].<br><br>
 
+
+### The SHC file structure
+
+examples/B-input.txt<br>
+examples/B-output.txt<br>
+examples/B-output-expected.txt<br>
+examples/B-messages.txt<br>
+examples/BpB-input.tx<br>
+examples/BpB-output.txt<br>
+examples/BpB-output-expected.txt<br>
+examples/BpB-messages.txt<br>
+examples/BpBB-input.txt<br>
+examples/BpBB-output.txt<br>
+examples/BpBB-output-expected.txt<br>
+examples/BpBB-messages.txt<br>
+examples/TE-input.txt<br>
+examples/TE-output.txt<br>
+examples/TE-output-expected.txt<br>
+examples/TE-messages.txt<br>
+input.txt<br>
+LICENSE<br>
+output.txt<br>
+README.txt<br>
+SHC.jar<br><br>
+
+
 ### Running the SHC
 
 As SHC is a Java program, you must first make sure you have Java installed on your machine.<br>
@@ -16,22 +42,24 @@ The executable version of the SHC is a typical .jar file, SHC.jar, in the SHC ro
 
 **java -jar SHC.jar \<classif\> (-examples) (-input \<input-file\>) (-output \<output-file\>) (-max-length \<chain-max-length\>) (-max-time \<max-time\>) (-buffer-size \<buffer-size\> (\<puzzle>\)**<br><br>
 where:<br>
-–	parts within parentheses are optional;<br>
-–	a - sign at the start of a keyword recalls that the choice is possible but not mandatory;<br>
-–	\<classif\> := TE-depth | B | BpB | BpBB; this is a mandatory choice, where you decide which classification you want to apply to your puzzles;<br>
-–	the presence of keyword -examples allows to specify that you want to run the predefined examples for the classification previously chosen; in this case, no other option is allowed;<br>
-–	\<input-file\> and \<output-file\> are full paths to files; they allow to specify which input and output files will be used (<input-file> for the puzzles and <output-file> for the classification results); the default values for \<input-file\> and \<output-file\> are respectively the “input.txt” and “output.txt” files of the SHC root folder, except in case -examples was selected, where they are  predefined in a different way (the corresponding xxx-input and xxx-output files of the "examples" folder, where xxx = \<classif\> );<br>
-–	\<chain-max-length\> is an integer, the maximal length allowed for chains (i.e. for braids); this option is allowed only when \<classif\>=B, in which case the default value is 9; the purpose is to avoid too long calculations of the B rating for very hard puzzles; note that pre-checking that the puzzle(s) is (are) in T&E(1) is under the user’s responsibility;<br>
-–	\<max-time\> is the maximum time, in minutes, allowed for the computation of each puzzle in the input file (with default value unrestricted);<br>
-–	\<buffer-size\> is an integer defining the maximum number of internal chains the program can store; default value is 50,000; change it only if its is too small (which can happen only in the \<classif\> = B case);<br>
-–	\<puzzle\> is all that remains in the command line after all the options (but only the first 81 caracters after the space following the last option are effectively considered); \<puzzle\> is the standard line representation of a sudoku puzzle; if \<puzzle\> is present, -example may not be selected and no -input or -output may be specified.<br><br>
+▸	parts within parentheses are optional;<br>
+▸	a - sign at the start of a keyword recalls that the choice is possible but not mandatory;<br>
+▸	\<classif\> := TE-depth | B | BpB | BpBB; this is a mandatory choice, where you decide which classification you want to apply to your puzzles;<br>
+▸	the presence of keyword -examples allows to specify that you want to run the predefined examples for the classification previously chosen; in this case, no other option is allowed;<br>
+▸	\<input-file\> and \<output-file\> are full paths to files; they allow to specify which input and output files will be used (<input-file> for the puzzles and <output-file> for the classification results); the default values for \<input-file\> and \<output-file\> are respectively the “input.txt” and “output.txt” files of the SHC root folder, except in case -examples was selected, where they are  predefined in a different way (the corresponding xxx-input and xxx-output files of the "examples" folder, where xxx = \<classif\> );<br>
+▸	\<chain-max-length\> is an integer, the maximal length allowed for chains (i.e. for braids); this option is allowed only when \<classif\>=B, in which case the default value is 9; the purpose is to avoid too long calculations of the B rating for very hard puzzles; note that pre-checking that the puzzle(s) is (are) in T&E(1) is under the user’s responsibility;<br>
+▸	\<max-time\> is the maximum time, in minutes, allowed for the computation of each puzzle in the input file (with default value unrestricted);<br>
+▸	\<buffer-size\> is an integer defining the maximum number of internal chains the program can store; default value is 50,000; change it only if its is too small (which can happen only in the \<classif\> = B case);<br>
+▸	\<puzzle\> is all that remains in the command line after all the options (but only the first 81 caracters after the space following the last option are effectively considered); \<puzzle\> is the standard line representation of a sudoku puzzle; if \<puzzle\> is present, -example may not be selected and no -input or -output may be specified.<br><br>
+
 
 ### Examples
 
 The examples folder contains four collections of puzzles, each adapted to one of the four classifications computed by the SHC.<br>
 Each collection is a small part of the large collection of puzzles used by Denis Berthier to compare the SudoRules and SHC results.<br>
 They are used to illustrate the results one can obtain with the SHC and to give an idea of the computations times.<br>
-For details about the examples, see [ISHC].<br><br>
+For details about the examples, see [HCCS].<br><br>
+
 
 ### References
 
