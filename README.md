@@ -64,7 +64,7 @@ However, it may take negative values in the following cases (with corresponding 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\<classif\> is not  relevant for this puzzle (e.g. applying the BpB rating to a puzzle in T&E(3)); check the T&E-depth of this puzzle;<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\<chain-max-length\> is too small for this puzzle (in case <classif> = B); try increasing it.<br><br>
 
-Notice that, in the <classif> = B case, what is computed is actually a **_truncated B rating_**, with all the values above \<chain-max-length\> leading to output -4. <br>
+Notice that, in the \<classif\> = B case, what is computed is actually a **_truncated B rating_**, with all the values above \<chain-max-length\> leading to output -4. <br>
 This is justified for two reasons:<br>
 ▸	in order to keep computation times and memory requirements within reasonable bounds when default values are used;<br>
 ▸	because, in unbiased statistics, puzzles with B rating greater than 9 (or even 8) are very rare.<br><br>
