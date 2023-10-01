@@ -69,7 +69,7 @@ However, it may take negative values in the following cases (with corresponding 
 -3  &nbsp;&nbsp;&nbsp;\<buffer-size\> is too small for this puzzle; try increasing it;<br>
 -4  &nbsp;&nbsp;&nbsp;other problems encountered, such as: <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\<classif\> is not  relevant for this puzzle (e.g. applying the BpB rating to a puzzle in T&E(3)); check the T&E-depth of this puzzle;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\<chain-max-length\> is too small for this puzzle (in case <classif> = B); try increasing it; note that if you increase <chains-max-length>, you may also have to increase <max-time> and/or <buffer-size>.<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\<chain-max-length\> is too small for this puzzle (in case \<classif\> = B); try increasing it; note that if you increase \<chains-max-length\>, you may also have to increase \<max-time\> and/or \<buffer-size\>.<br><br>
 
 Notice that, in the \<classif\> = B case, what is computed is actually a **_truncated B rating_**, with all the values above \<chain-max-length\> leading to output -4. <br>
 This is justified for two reasons:<br>
