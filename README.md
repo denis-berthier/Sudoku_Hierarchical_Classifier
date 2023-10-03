@@ -60,7 +60,7 @@ however, if -examples is selected, \<erase\> is automatically set to true and ca
 
 The following three options should be present only in case \<classif\>=B; if any of them is present in any of the other three cases, a warning will be issued and it will be merely ignored:<br>
 **▸**	\<max-length\> is an integer, the maximal length allowed for braids, with default value 8; the purpose is to avoid too long calculations of the B rating for very hard puzzles; note that pre-checking that the puzzle(s) is (are) in T&E(1) is under the user’s responsibility;<br>
-**▸**	\<max-time\> is an integer, the maximum time, in minutes, allowed for the computation of each puzzle in the input file (with default value 10), or for \<puzzle\>;<br>
+**▸**	\<max-time\> is an integer, the maximum time (with default value 10), in minutes, allowed for the computation of each puzzle in the input file or for \<puzzle\>;<br>
 **▸**	\<buffer-size\> is an integer defining the maximum number of internal chains the program can store; default value is 70,000; change it only if it is too small; <br>
 
 **▸**	\<puzzle\> is all that remains in the command line after all the options (but only the first 81 caracters after -puzzle are effectively considered); \<puzzle\> is the standard line representation of a sudoku puzzle; when \<puzzle\> is present, it will be ignored if -examples is specified, as stated previously; no -input or -output may be specified; if they are present, they will be ignored; for  technical reasons, \<puzzle\> may not contain any space or semi-colon; it may contain e.g. underscores instead.<br><br>
