@@ -1,7 +1,9 @@
 # Sudoku_Hierarchical_Classifier
 **Computes the universal T&amp;E-classification of Sudoku puzzles and their B, BpB or BpBB sub-classifications**<br><br>
 
-### Author of the Sudoku Hierarchical Classifier (SHC): François Cordoliani
+### The author of the Sudoku Hierarchical Classifier (SHC) is François Cordoliani.
+#### This software is propsed here on his behalf.<br><br>
+
 The development of the SHC was based on the same references as CSP-Rules or SudoRules (recalled at the end) but the implementations were totally independent.<br>
 All the classification results of the SHC and of SudoRules completely coincide on the large collections of puzzles used to compare them.<br>
 The SHC is much faster than SudoRules for the functionalities it implements. <br>
@@ -40,24 +42,28 @@ SHC.jar<br><br>
 As SHC is a Java program, you must first make sure you have Java installed on your machine.<br>
 The executable version of the SHC is a typical .jar file, SHC.jar, in the SHC root directory. As such, it is launched in that directory, in a standard way, by the following command line:<br>
 
-**java -jar SHC.jar \<classif\> (-examples) (-input \<input-file\>) (-output \<output-file\>) (-max-length \<chain-max-length\>) (-max-time \<max-time\>) (-buffer-size \<buffer-size\> (\<puzzle>\)**<br><br>
+**java -jar SHC.jar \<classif\> (-examples) (-input \<input-file\>) (-output \<output-file\>) (-erase \<erase\>) (-max-length \<max-length\>) (-max-time \<max-time\>) (-buffer-size \<buffer-size\>) (-puzzle \<puzzle>\)**<br><br>
 where:<br>
 **▸**	parts within parentheses are optional;<br>
 **▸**	a - sign at the start of a keyword recalls that the choice is possible but not mandatory;<br>
 **▸**	\<classif\> := TE-depth | B | BpB | BpBB; this is a mandatory choice, where you decide which classification you want to apply to your puzzles;<br>
 
-**▸**	the presence of keyword -examples allows to specify that you want to run the predefined examples for the classification previously chosen; in this case, no other option should be present; if options are nevertheless present, a message will be issued and they will be ignored;<br>
+**▸**	the presence of keyword -examples allows to specify that you want to run the predefined examples for the classification previously chosen; in this case, adapted specific values are chosen for the options and no other option should be present; if options are nevertheless present, a message will be issued and they will be ignored;<br>
 
-**▸**	\<input-file\> and \<output-file\> are full paths to files; they allow to specify which input and output files will be used (\<input-file\> for the puzzles and \<output-file\> for the classification results);<br>
+**▸**	\<input-file\> and \<output-file\> are paths to files; they allow to specify which input and output files will be used (\<input-file\> for the puzzles and \<output-file\> for the classification results);<br>
 the default values for \<input-file\> and \<output-file\> are respectively the “input.txt” and “output.txt” files of the SHC root folder, except in case -examples was selected, where they are  predefined in a different way (the corresponding xxx-input and xxx-output files of the "examples" folder, where xxx = \<classif\> );<br>
-Note that the output file is not emptied before writing new results to it; this allows to recover your previous calculations in case your forgot to copy them to another file; each time the SHC is launched, a black line and a title line stating which computations are done is first added before the results.<br>
 
-The following three options should be present only in case \<classif\>=B; if any of them is present in any of the 3 other cases, a warning will be issued and it will be merely ignored;<br>
-**▸**	\<chain-max-length\> is an integer, the maximal length allowed for braids, with default value 8; the purpose is to avoid too long calculations of the B rating for very hard puzzles; note that pre-checking that the puzzle(s) is (are) in T&E(1) is under the user’s responsibility;<br>
-**▸**	\<max-time\> is an integer, the maximum time, in minutes, allowed for the computation of each puzzle in the input file (with default value 10);<br>
+**▸**	\<erase\> := true | false;<br>
+by default, the output file is not emptied before writing new results to it; this allows to recover your previous calculations in case you forgot to copy them to another file; each time the SHC is launched, a title line recalling which computations will follow is added before the results;<br>
+you may change this behaviour by specifying "-erase true";<br>
+however, if -examples is selected, \<erase\> is automatically set to true and can't be changed; the reason is to allow easy comparisons with the expected results.<br>
+
+The following three options should be present only in case \<classif\>=B; if any of them is present in any of the other three cases, a warning will be issued and it will be merely ignored:<br>
+**▸**	\<max-length\> is an integer, the maximal length allowed for braids, with default value 8; the purpose is to avoid too long calculations of the B rating for very hard puzzles; note that pre-checking that the puzzle(s) is (are) in T&E(1) is under the user’s responsibility;<br>
+**▸**	\<max-time\> is an integer, the maximum time, in minutes, allowed for the computation of each puzzle in the input file (with default value 10), or for \<puzzle\>;<br>
 **▸**	\<buffer-size\> is an integer defining the maximum number of internal chains the program can store; default value is 70,000; change it only if it is too small; <br>
 
-**▸**	\<puzzle\> is all that remains in the command line after all the options (but only the first 81 caracters after the space following the last option are effectively considered); \<puzzle\> is the standard line representation of a sudoku puzzle; if \<puzzle\> is present, -example may not be selected and no -input or -output may be specified; if they are present, they will be ignored.<br><br>
+**▸**	\<puzzle\> is all that remains in the command line after all the options (but only the first 81 caracters after -puzzle are effectively considered); \<puzzle\> is the standard line representation of a sudoku puzzle; when \<puzzle\> is present, it will be ignored if -examples is specified, as stated previously; no -input or -output may be specified; if they are present, they will be ignored; for  technical reasons, \<puzzle\> may not contain any space or semi-colon; it may contain e.g. underscores instead.<br><br>
 
 
 ### Output of the SHC
@@ -69,9 +75,9 @@ However, it may take negative values in the following cases (with corresponding 
 -3  &nbsp;&nbsp;&nbsp;\<buffer-size\> is too small for this puzzle; try increasing it;<br>
 -4  &nbsp;&nbsp;&nbsp;other problems encountered, such as: <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\<classif\> is not  relevant for this puzzle (e.g. applying the BpB rating to a puzzle in T&E(3)); check the T&E-depth of this puzzle;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\<chain-max-length\> is too small for this puzzle (in case \<classif\> = B); try increasing it; note that if you increase \<chains-max-length\>, you may also have to increase \<max-time\> and/or \<buffer-size\>.<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\<max-length\> is too small for this puzzle (in case \<classif\> = B); try increasing it; note that if you increase \<max-length\>, you may also have to increase \<max-time\> and/or \<buffer-size\>.<br><br>
 
-Notice that, in the \<classif\> = B case, what is computed is actually a **_truncated B rating_**, with all the values above \<chain-max-length\> leading to output -4. <br>
+Notice that, in the \<classif\> = B case, what is computed is actually a **_truncated B rating_**, with all the values above \<max-length\> leading to output -4. <br>
 This is justified for two reasons:<br>
 ▸	in order to keep computation times and memory requirements within reasonable bounds when default values are used;<br>
 ▸	because, in unbiased statistics, puzzles with B rating greater than 8 are rare.<br><br>
@@ -83,7 +89,7 @@ In the SHC view, the main purpose of the B rating is to provide a rough sub-clas
 
 The examples folder contains four collections of puzzles, each adapted to one of the four classifications computed by the SHC.<br>
 Each collection is a small part of the large collection of puzzles used by Denis Berthier to compare the SudoRules and SHC results (which also provides a cross validation for both, as they were indepedently implemented in totally different ways).<br>
-They are used to illustrate the results one can obtain with the SHC and to give an idea of the computations times.<br>
+They are used to illustrate the results one can obtain with the SHC and to give an idea of the computation times one may expect.<br>
 For details about the examples, see [HCCS].<br><br>
 
 
