@@ -1,12 +1,62 @@
+WARNING: all parameters other than rating category will be ignored.
+
 SHC will run under the following conditions:
-******************************************
+*******************************************
+Rating category: BpB
+Rating all puzzles in this file: examples/BpB-input.txt
+Output file: examples/BpB-output.txt
+This output file already exists. It will be emptied before writing.
+*******************************************
+Puzzle 1  p = 2  Time = 2s  Cumulated time = 2s  Chains buffer: 9/70000
+Puzzle 2  p = 2  Time = 4s  Cumulated time = 6s  Chains buffer: 10/70000
+Puzzle 3  p = 2  Time = 1s  Cumulated time = 6s  Chains buffer: 6/70000
+Puzzle 4  p = 2  Time = 4s  Cumulated time = 10s  Chains buffer: 9/70000
+Puzzle 5  p = 2  Time = 1s  Cumulated time = 11s  Chains buffer: 8/70000
+Puzzle 6  p = 2  Time = 2s  Cumulated time = 13s  Chains buffer: 7/70000
+Puzzle 7  p = 2  Time = 3s  Cumulated time = 16s  Chains buffer: 11/70000
+Puzzle 8  p = 2  Time = 2s  Cumulated time = 18s  Chains buffer: 8/70000
+Puzzle 9  p = 2  Time = 3s  Cumulated time = 21s  Chains buffer: 10/70000
+Puzzle 10  p = 2  Time = 2s  Cumulated time = 22s  Chains buffer: 9/70000
+Puzzle 11  p = 2  Time = 2s  Cumulated time = 24s  Chains buffer: 7/70000
+Puzzle 12  p = 2  Time = 1s  Cumulated time = 25s  Chains buffer: 7/70000
+Puzzle 13  p = 2  Time = 1s  Cumulated time = 26s  Chains buffer: 8/70000
+Puzzle 14  p = 2  Time = 1s  Cumulated time = 28s  Chains buffer: 7/70000
+Puzzle 15  p = 2  Time = 1s  Cumulated time = 29s  Chains buffer: 7/70000
+Puzzle 16  p = 2  Time = 1s  Cumulated time = 29s  Chains buffer: 5/70000
+Puzzle 17  p = 2  Time = 1s  Cumulated time = 31s  Chains buffer: 8/70000
+Puzzle 18  p = 2  Time = 0s  Cumulated time = 31s  Chains buffer: 5/70000
+Puzzle 19  p = 2  Time = 1s  Cumulated time = 32s  Chains buffer: 4/70000
+Puzzle 20  p = 2  Time = 1s  Cumulated time = 32s  Chains buffer: 8/70000
+Puzzle 21  p = 3  Time = 4s  Cumulated time = 36s  Chains buffer: 18/70000
+Puzzle 22  p = 3  Time = 1s  Cumulated time = 37s  Chains buffer: 30/70000
+Puzzle 23  p = 3  Time = 2s  Cumulated time = 39s  Chains buffer: 38/70000
+Puzzle 24  p = 3  Time = 1s  Cumulated time = 40s  Chains buffer: 17/70000
+Puzzle 25  p = 3  Time = 10s  Cumulated time = 50s  Chains buffer: 39/70000
+Puzzle 26  p = 3  Time = 1s  Cumulated time = 50s  Chains buffer: 21/70000
+Puzzle 27  p = 3  Time = 3s  Cumulated time = 54s  Chains buffer: 34/70000
+Puzzle 28  p = 3  Time = 2s  Cumulated time = 55s  Chains buffer: 33/70000
+Puzzle 29  p = 3  Time = 2s  Cumulated time = 57s  Chains buffer: 28/70000
+Puzzle 30  p = 3  Time = 3s  Cumulated time = 1m1s  Chains buffer: 30/70000
+Puzzle 31  p = 3  Time = 2s  Cumulated time = 1m3s  Chains buffer: 21/70000
+Puzzle 32  p = 3  Time = 11s  Cumulated time = 1m14s  Chains buffer: 40/70000
+Puzzle 33  p = 3  Time = 4s  Cumulated time = 1m18s  Chains buffer: 37/70000
+Puzzle 34  p = 3  Time = 3s  Cumulated time = 1m20s  Chains buffer: 34/70000
+Puzzle 35  p = 3  Time = 2s  Cumulated time = 1m22s  Chains buffer: 31/70000
+Puzzle 36  p = 3  Time = 2s  Cumulated time = 1m24s  Chains buffer: 25/70000
+Puzzle 37  p = 3  Time = 1s  Cumulated time = 1m25s  Chains buffer: 23/70000^C%                               berthier@m1-db SHC3 % java -jar SHC.jar B -examples 
+
+WARNING: all parameters other than rating category will be ignored.
+
+SHC will run under the following conditions:
+*******************************************
 Rating category: B
 Rating all puzzles in this file: examples/B-input.txt
 Output file: examples/B-output.txt
+This output file already exists. It will be emptied before writing.
 max-length = 9
 buffer-size = 70000
 max-time = 10mn
-WARNING: file  examples/B-output.txt  already exists.
+*******************************************
 Puzzle 1  n = 0  Time = 0s  Cumulated time = 0s  Chains buffer: 0/70000
 Puzzle 2  n = 0  Time = 0s  Cumulated time = 0s  Chains buffer: 0/70000
 Puzzle 3  n = 0  Time = 0s  Cumulated time = 0s  Chains buffer: 0/70000
@@ -17,16 +67,16 @@ Puzzle 7  n = 0  Time = 0s  Cumulated time = 0s  Chains buffer: 0/70000
 Puzzle 8  n = 0  Time = 0s  Cumulated time = 0s  Chains buffer: 0/70000
 Puzzle 9  n = 0  Time = 0s  Cumulated time = 0s  Chains buffer: 0/70000
 Puzzle 10  n = 0  Time = 0s  Cumulated time = 0s  Chains buffer: 0/70000
-Puzzle 11  n = 1  Time = 0s  Cumulated time = 0s  Chains buffer: 0/70000
-Puzzle 12  n = 1  Time = 0s  Cumulated time = 0s  Chains buffer: 0/70000
-Puzzle 13  n = 1  Time = 0s  Cumulated time = 0s  Chains buffer: 0/70000
-Puzzle 14  n = 1  Time = 0s  Cumulated time = 0s  Chains buffer: 0/70000
-Puzzle 15  n = 1  Time = 0s  Cumulated time = 0s  Chains buffer: 0/70000
-Puzzle 16  n = 1  Time = 0s  Cumulated time = 0s  Chains buffer: 0/70000
-Puzzle 17  n = 1  Time = 0s  Cumulated time = 0s  Chains buffer: 0/70000
-Puzzle 18  n = 1  Time = 0s  Cumulated time = 0s  Chains buffer: 0/70000
-Puzzle 19  n = 1  Time = 0s  Cumulated time = 0s  Chains buffer: 0/70000
-Puzzle 20  n = 1  Time = 0s  Cumulated time = 0s  Chains buffer: 0/70000
+Puzzle 11  n = 1  Time = 0s  Cumulated time = 0s  Chains buffer: 1/70000
+Puzzle 12  n = 1  Time = 0s  Cumulated time = 0s  Chains buffer: 1/70000
+Puzzle 13  n = 1  Time = 0s  Cumulated time = 0s  Chains buffer: 1/70000
+Puzzle 14  n = 1  Time = 0s  Cumulated time = 0s  Chains buffer: 1/70000
+Puzzle 15  n = 1  Time = 0s  Cumulated time = 0s  Chains buffer: 1/70000
+Puzzle 16  n = 1  Time = 0s  Cumulated time = 0s  Chains buffer: 1/70000
+Puzzle 17  n = 1  Time = 0s  Cumulated time = 0s  Chains buffer: 1/70000
+Puzzle 18  n = 1  Time = 0s  Cumulated time = 0s  Chains buffer: 1/70000
+Puzzle 19  n = 1  Time = 0s  Cumulated time = 0s  Chains buffer: 1/70000
+Puzzle 20  n = 1  Time = 0s  Cumulated time = 0s  Chains buffer: 1/70000
 Puzzle 21  n = 2  Time = 0s  Cumulated time = 0s  Chains buffer: 10/70000
 Puzzle 22  n = 2  Time = 0s  Cumulated time = 0s  Chains buffer: 1/70000
 Puzzle 23  n = 2  Time = 0s  Cumulated time = 0s  Chains buffer: 1/70000
@@ -41,7 +91,7 @@ Puzzle 31  n = 3  Time = 0s  Cumulated time = 0s  Chains buffer: 19/70000
 Puzzle 32  n = 3  Time = 0s  Cumulated time = 0s  Chains buffer: 11/70000
 Puzzle 33  n = 3  Time = 0s  Cumulated time = 0s  Chains buffer: 52/70000
 Puzzle 34  n = 3  Time = 0s  Cumulated time = 0s  Chains buffer: 7/70000
-Puzzle 35  n = 3  Time = 0s  Cumulated time = 1s  Chains buffer: 5/70000
+Puzzle 35  n = 3  Time = 0s  Cumulated time = 0s  Chains buffer: 5/70000
 Puzzle 36  n = 3  Time = 0s  Cumulated time = 1s  Chains buffer: 15/70000
 Puzzle 37  n = 3  Time = 0s  Cumulated time = 1s  Chains buffer: 17/70000
 Puzzle 38  n = 3  Time = 0s  Cumulated time = 1s  Chains buffer: 37/70000
@@ -52,54 +102,57 @@ Puzzle 42  n = 4  Time = 0s  Cumulated time = 1s  Chains buffer: 144/70000
 Puzzle 43  n = 4  Time = 0s  Cumulated time = 1s  Chains buffer: 20/70000
 Puzzle 44  n = 4  Time = 0s  Cumulated time = 1s  Chains buffer: 90/70000
 Puzzle 45  n = 4  Time = 0s  Cumulated time = 1s  Chains buffer: 93/70000
-Puzzle 46  n = 4  Time = 0s  Cumulated time = 2s  Chains buffer: 142/70000
-Puzzle 47  n = 4  Time = 0s  Cumulated time = 2s  Chains buffer: 163/70000
+Puzzle 46  n = 4  Time = 0s  Cumulated time = 1s  Chains buffer: 142/70000
+Puzzle 47  n = 4  Time = 0s  Cumulated time = 1s  Chains buffer: 163/70000
 Puzzle 48  n = 4  Time = 0s  Cumulated time = 2s  Chains buffer: 49/70000
 Puzzle 49  n = 4  Time = 0s  Cumulated time = 2s  Chains buffer: 50/70000
 Puzzle 50  n = 4  Time = 0s  Cumulated time = 2s  Chains buffer: 216/70000
 Puzzle 51  n = 5  Time = 0s  Cumulated time = 2s  Chains buffer: 183/70000
-Puzzle 52  n = 5  Time = 0s  Cumulated time = 3s  Chains buffer: 326/70000
-Puzzle 53  n = 5  Time = 1s  Cumulated time = 3s  Chains buffer: 400/70000
-Puzzle 54  n = 5  Time = 1s  Cumulated time = 5s  Chains buffer: 540/70000
-Puzzle 55  n = 5  Time = 0s  Cumulated time = 5s  Chains buffer: 426/70000
-Puzzle 56  n = 5  Time = 0s  Cumulated time = 6s  Chains buffer: 514/70000
-Puzzle 57  n = 5  Time = 0s  Cumulated time = 6s  Chains buffer: 100/70000
-Puzzle 58  n = 5  Time = 0s  Cumulated time = 6s  Chains buffer: 414/70000
-Puzzle 59  n = 5  Time = 1s  Cumulated time = 7s  Chains buffer: 311/70000
-Puzzle 60  n = 5  Time = 1s  Cumulated time = 8s  Chains buffer: 1460/70000
-Puzzle 61  n = 6  Time = 1s  Cumulated time = 9s  Chains buffer: 240/70000
-Puzzle 62  n = 6  Time = 0s  Cumulated time = 10s  Chains buffer: 431/70000
-Puzzle 63  n = 6  Time = 0s  Cumulated time = 10s  Chains buffer: 1440/70000
-Puzzle 64  n = 6  Time = 1s  Cumulated time = 12s  Chains buffer: 701/70000
-Puzzle 65  n = 6  Time = 1s  Cumulated time = 12s  Chains buffer: 335/70000
-Puzzle 66  n = 6  Time = 1s  Cumulated time = 13s  Chains buffer: 1604/70000
-Puzzle 67  n = 6  Time = 2s  Cumulated time = 15s  Chains buffer: 2749/70000
-Puzzle 68  n = 6  Time = 1s  Cumulated time = 16s  Chains buffer: 652/70000
-Puzzle 69  n = 6  Time = 1s  Cumulated time = 17s  Chains buffer: 857/70000
-Puzzle 70  n = 6  Time = 1s  Cumulated time = 18s  Chains buffer: 923/70000
-Puzzle 71  n = 7  Time = 3s  Cumulated time = 20s  Chains buffer: 4016/70000
-Puzzle 72  n = 7  Time = 11s  Cumulated time = 32s  Chains buffer: 12789/70000
-Puzzle 73  n = 7  Time = 1s  Cumulated time = 33s  Chains buffer: 297/70000
-Puzzle 74  n = 7  Time = 9s  Cumulated time = 42s  Chains buffer: 3896/70000
-Puzzle 75  n = 7  Time = 1s  Cumulated time = 43s  Chains buffer: 647/70000
-Puzzle 76  n = 7  Time = 2s  Cumulated time = 45s  Chains buffer: 1109/70000
-Puzzle 77  n = 7  Time = 3s  Cumulated time = 47s  Chains buffer: 1212/70000
-Puzzle 78  n = 7  Time = 2s  Cumulated time = 49s  Chains buffer: 2325/70000
-Puzzle 79  n = 7  Time = 3s  Cumulated time = 52s  Chains buffer: 435/70000
-Puzzle 80  n = 7  Time = 10s  Cumulated time = 1m2s  Chains buffer: 3325/70000
-Puzzle 81  n = 8  Time = 4s  Cumulated time = 1m6s  Chains buffer: 2122/70000
-Puzzle 82  n = 8  Time = 59s  Cumulated time = 2m6s  Chains buffer: 12644/70000
-Puzzle 83  n = 8  Time = 3s  Cumulated time = 2m9s  Chains buffer: 1398/70000
-Puzzle 84  n = 8  Time = 19s  Cumulated time = 2m27s  Chains buffer: 6206/70000
-Puzzle 85  n = 8  Time = 8s  Cumulated time = 2m36s  Chains buffer: 4011/70000
-Puzzle 86  n = 8  Time = 6s  Cumulated time = 2m42s  Chains buffer: 13926/70000
-Puzzle 87  n = 8  Time = 14s  Cumulated time = 2m56s  Chains buffer: 5442/70000
-Puzzle 88  n = 8  Time = 4s  Cumulated time = 3m0s  Chains buffer: 490/70000
-Puzzle 89  n = 8  Time = 7s  Cumulated time = 3m7s  Chains buffer: 2354/70000
-Puzzle 90  n = 8  Time = 31s  Cumulated time = 3m39s  Chains buffer: 3048/70000
-Puzzle 91  n = 9  Time = 5s  Cumulated time = 3m44s  Chains buffer: 6059/70000
-Puzzle 92  n = 9  Time = 33s  Cumulated time = 4m17s  Chains buffer: 6322/70000
+Puzzle 52  n = 5  Time = 0s  Cumulated time = 2s  Chains buffer: 326/70000
+Puzzle 53  n = 5  Time = 0s  Cumulated time = 3s  Chains buffer: 400/70000
+Puzzle 54  n = 5  Time = 1s  Cumulated time = 3s  Chains buffer: 540/70000
+Puzzle 55  n = 5  Time = 0s  Cumulated time = 4s  Chains buffer: 426/70000
+Puzzle 56  n = 5  Time = 0s  Cumulated time = 4s  Chains buffer: 514/70000
+Puzzle 57  n = 5  Time = 0s  Cumulated time = 4s  Chains buffer: 100/70000
+Puzzle 58  n = 5  Time = 0s  Cumulated time = 4s  Chains buffer: 414/70000
+Puzzle 59  n = 5  Time = 0s  Cumulated time = 5s  Chains buffer: 311/70000
+Puzzle 60  n = 5  Time = 1s  Cumulated time = 6s  Chains buffer: 1460/70000
+Puzzle 61  n = 6  Time = 1s  Cumulated time = 7s  Chains buffer: 240/70000
+Puzzle 62  n = 6  Time = 0s  Cumulated time = 7s  Chains buffer: 431/70000
+Puzzle 63  n = 6  Time = 0s  Cumulated time = 7s  Chains buffer: 1440/70000
+Puzzle 64  n = 6  Time = 1s  Cumulated time = 8s  Chains buffer: 701/70000
+Puzzle 65  n = 6  Time = 0s  Cumulated time = 9s  Chains buffer: 335/70000
+Puzzle 66  n = 6  Time = 0s  Cumulated time = 9s  Chains buffer: 1604/70000
+Puzzle 67  n = 6  Time = 2s  Cumulated time = 11s  Chains buffer: 2749/70000
+Puzzle 68  n = 6  Time = 1s  Cumulated time = 12s  Chains buffer: 652/70000
+Puzzle 69  n = 6  Time = 1s  Cumulated time = 13s  Chains buffer: 857/70000
+Puzzle 70  n = 6  Time = 0s  Cumulated time = 13s  Chains buffer: 923/70000
+Puzzle 71  n = 7  Time = 2s  Cumulated time = 15s  Chains buffer: 4016/70000
+Puzzle 72  n = 7  Time = 10s  Cumulated time = 25s  Chains buffer: 12789/70000
+Puzzle 73  n = 7  Time = 1s  Cumulated time = 26s  Chains buffer: 297/70000
+Puzzle 74  n = 7  Time = 8s  Cumulated time = 34s  Chains buffer: 3896/70000
+Puzzle 75  n = 7  Time = 1s  Cumulated time = 35s  Chains buffer: 647/70000
+Puzzle 76  n = 7  Time = 1s  Cumulated time = 36s  Chains buffer: 1109/70000
+Puzzle 77  n = 7  Time = 2s  Cumulated time = 38s  Chains buffer: 1212/70000
+Puzzle 78  n = 7  Time = 2s  Cumulated time = 40s  Chains buffer: 2325/70000
+Puzzle 79  n = 7  Time = 2s  Cumulated time = 42s  Chains buffer: 435/70000
+Puzzle 80  n = 7  Time = 12s  Cumulated time = 54s  Chains buffer: 3325/70000
+Puzzle 81  n = 8  Time = 3s  Cumulated time = 57s  Chains buffer: 2122/70000
+Puzzle 82  n = 8  Time = 1m9s  Cumulated time = 2m6s  Chains buffer: 12644/70000
+Puzzle 83  n = 8  Time = 2s  Cumulated time = 2m8s  Chains buffer: 1398/70000
+Puzzle 84  n = 8  Time = 21s  Cumulated time = 2m29s  Chains buffer: 6206/70000
+Puzzle 85  n = 8  Time = 8s  Cumulated time = 2m37s  Chains buffer: 4011/70000
+Puzzle 86  n = 8  Time = 6s  Cumulated time = 2m44s  Chains buffer: 13926/70000
+Puzzle 87  n = 8  Time = 15s  Cumulated time = 2m59s  Chains buffer: 5442/70000
+Puzzle 88  n = 8  Time = 4s  Cumulated time = 3m2s  Chains buffer: 490/70000
+Puzzle 89  n = 8  Time = 6s  Cumulated time = 3m8s  Chains buffer: 2354/70000
+Puzzle 90  n = 8  Time = 39s  Cumulated time = 3m48s  Chains buffer: 3048/70000
+Puzzle 91  n = 9  Time = 5s  Cumulated time = 3m52s  Chains buffer: 6059/70000
+Puzzle 92  n = 9  Time = 39s  Cumulated time = 4m31s  Chains buffer: 6322/70000
 Number of puzzles examined: 92
 Number of unsolved puzzles: 0
 
 Execution finished.
+Press the enter key to exit.
+
+
