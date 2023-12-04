@@ -48,14 +48,14 @@ where:<br>
 **▸**	a - sign at the start of a keyword recalls that the choice is possible but not mandatory;<br>
 **▸**	\<classif\> := version | TE-depth | B | BpB | BpBB; this is a mandatory choice, where you decide which of the four available classifications you want to apply to your puzzles; (version is considered as the "empty classification"; it only outputs the SHC version number); <br>
 
-**▸**	the presence of keyword -examples allows to specify that you want to run the predefined examples for the classification previously chosen; in this case, adapted specific values are chosen for the options and no other option should be present; if options are nevertheless present, a message will be issued and they will be ignored;<br>
+**▸**	the presence of keyword -examples allows to specify that you want to run the predefined examples for the classification previously chosen; in this case, adapted specific values are chosen for the options and no other option should be present, exxcept possibly -auto-end; if other options are nevertheless present, a message will be issued and they will be ignored;<br>
 
 **▸**	\<input-file\> and \<output-file\> are paths to files; they allow to specify which input and output files will be used (\<input-file\> for the puzzles and \<output-file\> for the classification results);<br>
 the default values for \<input-file\> and \<output-file\> are respectively the “input.txt” and “output.txt” files of the SHC root folder, except in case -examples was selected, where they are  predefined in a different way (the corresponding xxx-input and xxx-output files of the "examples" folder, where xxx = \<classif\> );<br>
 
 **▸**	\<erase\> := true | false;<br>
-by default, the output file is not emptied before writing new results to it; this allows you to recover your previous calculations in case you forgot to copy them to another file; each time the SHC is launched, a title line recalling which computations will follow is added before the results;<br>
-you may change this behaviour by specifying "-erase true";<br>
+by default, \<erase\> = true and the output file is emptied before writing new results to it;<br>
+you may change this behaviour by specifying "-erase false"; this will allow you to recover your previous calculations in case you forgot to copy them to another file; each time the SHC is launched with this option set to false, a title line recalling which computations follow will be added before the results;<br>
 however, if -examples is selected, \<erase\> is automatically set to true and can't be changed; the reason is to allow easy comparisons with the expected results.<br>
 
 **▸**	\<auto-end\> := true | false;<br>
