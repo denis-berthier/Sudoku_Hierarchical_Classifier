@@ -42,7 +42,7 @@ SHC.jar<br><br>
 As SHC is a Java program, you must first make sure you have Java installed on your machine.<br>
 The executable version of the SHC is a typical .jar file, SHC.jar, in the SHC root directory. As such, it is launched in that directory, in a standard way, by the following command line:<br>
 
-**java -jar SHC.jar \<classif\> (-examples) (-input \<input-file\>) (-output \<output-file\>) (-erase \<erase\>) (-max-length \<max-length\>) (-max-time \<max-time\>) (-buffer-size \<buffer-size\>) (-puzzle \<puzzle>\)**<br><br>
+**java -jar SHC.jar \<classif\> (-examples) (-input \<input-file\>) (-output \<output-file\>) (-erase \<erase\>) (-auto-end \<auto-end\>) (-max-length \<max-length\>) (-max-time \<max-time\>) (-buffer-size \<buffer-size\>) (-puzzle \<puzzle>\)**<br><br>
 where:<br>
 **▸**	parts within parentheses are optional;<br>
 **▸**	a - sign at the start of a keyword recalls that the choice is possible but not mandatory;<br>
@@ -57,6 +57,10 @@ the default values for \<input-file\> and \<output-file\> are respectively the �
 by default, the output file is not emptied before writing new results to it; this allows you to recover your previous calculations in case you forgot to copy them to another file; each time the SHC is launched, a title line recalling which computations will follow is added before the results;<br>
 you may change this behaviour by specifying "-erase true";<br>
 however, if -examples is selected, \<erase\> is automatically set to true and can't be changed; the reason is to allow easy comparisons with the expected results.<br>
+
+**▸**	\<auto-end\> := true | false;<br>
+by default, \<auto-end\> is true and the process fully terminates at the end of the computations; set \<auto-end\> to false if you want to recover the previous behaviour (preventing the Windows console to close at the end of the computations, so that you have time to check the messages in the console); this parameter can be completely ignored by non-Windows users; having \<auto-end\> true by default will allow to more easily include SHC in scripts (in particular in the search for hard puzzles).<br>
+
 
 The following three options should be present only in case \<classif\> = B or BpB; if any of them is present in an other case, a warning will be issued and it will be merely ignored:<br>
 **▸**	\<max-length\> is an integer, the maximal length allowed for braids, with default value 8 in case \<classif\> = B and 12 in case \<classif\> = BpB; the purpose is to avoid too long calculations of the B rating for very hard puzzles i n T&E(1), but to leave a wide margin of possibilities for the BpB rating, allowing to find extreme T&E(2) puzzles beyond the highest known ones (i.e. beyond B10B); note that pre-checking that the puzzle(s) is (are) in T&E(1) or T&E(2) is under the user’s responsibility;<br>
