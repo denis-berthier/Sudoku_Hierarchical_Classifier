@@ -64,7 +64,7 @@ by default, \<auto-end\> is true and the process fully terminates at the end of 
 
 
 The following three options should be present only in case \<classif\> = B or BpB; if any of them is present in an other case, a warning will be issued and it will be merely ignored:<br>
-**▸**	\<max-length\> is an integer, the maximal length allowed for braids, with default value 8 in case \<classif\> = B and 12 in case \<classif\> = BpB; the purpose is to avoid too long calculations of the B rating for very hard puzzles i n T&E(1), but to leave a wide margin of possibilities for the BpB rating, allowing to find extreme T&E(2) puzzles beyond the highest known ones (i.e. beyond B10B); note that pre-checking that the puzzle(s) is (are) in T&E(1) or T&E(2) is under the user’s responsibility;<br>
+**▸**	\<max-length\> is an integer, the maximal length allowed for braids, with default value 8 in case \<classif\> = B and 14 in case \<classif\> = BpB; the purpose is to avoid too long calculations of the B rating for very hard puzzles in T&E(1), but to leave a wide margin of possibilities for the BpB rating, allowing to find extreme T&E(2) puzzles up to the highest known ones (i.e. up to B14B); note that pre-checking that the puzzle(s) is (are) in T&E(1) or T&E(2) is under the user’s responsibility;<br>
 **▸**	\<max-time\> is an integer, the maximum time (with default value 10), in minutes, allowed for the computation of each puzzle in the input file or for \<puzzle\>; it applies only to the case \<classif\> = B;<br>
 **▸**	\<buffer-size\> is an integer defining the maximum number of partial braids the program can store; default value is 500,000 if \<classif\>= B or BpB; change it only if it is too small; <br>
 
