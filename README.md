@@ -1,5 +1,5 @@
 # Sudoku_Hierarchical_Classifier
-**Computes the universal T&amp;E-classification of Sudoku puzzles and their B, BpB or BpBB sub-classifications**<br><br>
+**Computes the universal T&amp;E-classification of Sudoku puzzles and their B, BxB or BxBB sub-classifications**<br><br>
 
 ### The author of the Sudoku Hierarchical Classifier (SHC) is François Cordoliani.
 #### This software is proposed here on his behalf.<br><br>
@@ -7,9 +7,11 @@
 The development of the SHC was based on the same references as CSP-Rules or SudoRules (recalled at the end) but the implementations were totally independent.<br>
 All the classification results of the SHC and of SudoRules completely coincide on the large collections of puzzles used to compare them.<br>
 The SHC is much faster than SudoRules for the functionalities it implements. <br>
-It is hoped that the T&E-depth and BpB parts will be very useful in the search for the "hardest" puzzles.<br><br>
+It is hoped that the T&E-depth and BxB parts will be very useful in the search for the "hardest" puzzles.<br><br>
 For full details about the concepts and theories underlying the SHC, see [CRT] or [PBCS].<br>
 For a much shorter (almost) self-contained introduction to them and for the analysis of some of the SHC results, see [HCCS].<br><br>
+
+WARNING: Due to possible confusions with the BpB rating, what was previously called the BpB classification is now called the BxB classification. Similarly, what was previously called the BpBB classification is now called the BxBB classification. Corresponding name changes have therefore been made in the command line. Nothing else has changed.<br><br>
 
 
 ### The SHC file structure
@@ -18,14 +20,14 @@ examples/B-input.txt<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/B-output.txt<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/B-output-expected.txt<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/B-messages.txt<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/BpB-input.tx<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/BpB-output.txt<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/BpB-output-expected.txt<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/BpB-messages.txt<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/BpBB-input.txt<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/BpBB-output.txt<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/BpBB-output-expected.txt<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/BpBB-messages.txt<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/BxB-input.tx<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/BxB-output.txt<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/BxB-output-expected.txt<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/BxB-messages.txt<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/BxBB-input.txt<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/BxBB-output.txt<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/BxBB-output-expected.txt<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/BxBB-messages.txt<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/TE-input.txt<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/TE-output.txt<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/TE-output-expected.txt<br>
@@ -47,7 +49,7 @@ The executable version of the SHC is a typical .jar file, SHC.jar, in the SHC ro
 where:<br>
 **▸**	parts within parentheses are optional;<br>
 **▸**	a - sign at the start of a keyword recalls that the choice is possible but not mandatory;<br>
-**▸**	\<classif\> := version | TE-depth | B | BpB | BpBB; this is a mandatory choice, where you decide which of the four available classifications you want to apply to your puzzles; (version is considered as the "empty classification"; it only outputs the SHC version number); <br>
+**▸**	\<classif\> := version | TE-depth | B | BxB | BxBB; this is a mandatory choice, where you decide which of the four available classifications you want to apply to your puzzles; (version is considered as the "empty classification"; it only outputs the SHC version number); <br>
 
 **▸**	the presence of keyword -examples allows to specify that you want to run the predefined examples for the classification previously chosen; in this case, adapted specific values are chosen for the options and no other option should be present, exxcept possibly -auto-end; if other options are nevertheless present, a message will be issued and they will be ignored;<br>
 
@@ -63,10 +65,10 @@ however, if -examples is selected, \<erase\> is automatically set to true and ca
 by default, \<auto-end\> is true and the process fully terminates at the end of the computations; set \<auto-end\> to false if you want to recover the previous behaviour (preventing the Windows console to close at the end of the computations, so that you have time to check the messages in the console); this option can be completely ignored by non-Windows users; having \<auto-end\> true by default will allow to more easily include SHC in scripts (in particular in the search for hard puzzles).<br>
 
 
-The following three options should be present only in case \<classif\> = B or BpB; if any of them is present in an other case, a warning will be issued and it will be merely ignored:<br>
-**▸**	\<max-length\> is an integer, the maximal length allowed for braids, with default value 8 in case \<classif\> = B and 14 in case \<classif\> = BpB; the purpose is to avoid too long calculations of the B rating for very hard puzzles in T&E(1), but to leave a wide margin of possibilities for the BpB rating, allowing to find extreme T&E(2) puzzles up to the highest known ones (i.e. up to B14B); note that pre-checking that the puzzle(s) is (are) in T&E(1) or T&E(2) is under the user’s responsibility;<br>
+The following three options should be present only in case \<classif\> = B or BxB; if any of them is present in an other case, a warning will be issued and it will be merely ignored:<br>
+**▸**	\<max-length\> is an integer, the maximal length allowed for braids, with default value 8 in case \<classif\> = B and 14 in case \<classif\> = BxB; the purpose is to avoid too long calculations of the B rating for very hard puzzles in T&E(1), but to leave a wide margin of possibilities for the BxB classification, allowing to find extreme T&E(2) puzzles up to the highest known ones (i.e. up to B14B); note that pre-checking that the puzzle(s) is (are) in T&E(1) or T&E(2) is under the user’s responsibility;<br>
 **▸**	\<max-time\> is an integer, the maximum time (with default value 10), in minutes, allowed for the computation of each puzzle in the input file or for \<puzzle\>; it applies only to the case \<classif\> = B;<br>
-**▸**	\<buffer-size\> is an integer defining the maximum number of partial braids the program can store; default value is 500,000 if \<classif\>= B or BpB; change it only if it is too small; <br>
+**▸**	\<buffer-size\> is an integer defining the maximum number of partial braids the program can store; default value is 500,000 if \<classif\>= B or BxB; change it only if it is too small; <br>
 
 **▸**	\<puzzle\> is all that remains in the command line after all the options (but only the first 81 caracters after -puzzle are effectively considered); \<puzzle\> is the standard line representation of a sudoku puzzle; when \<puzzle\> is present, it will be ignored if -examples is specified, as stated previously; no -input or -output may be specified; if they are present, they will be ignored; for  technical reasons, \<puzzle\> may not contain any space or semi-colon; it may contain e.g. underscores instead.<br><br>
 
@@ -79,7 +81,7 @@ However, it may take negative values in the following cases (with corresponding 
 -2  &nbsp;&nbsp;&nbsp;\<max-time\> allowed is too short for this puzzle; try increasing it;<br>
 -3  &nbsp;&nbsp;&nbsp;\<buffer-size\> is too small for this puzzle; try increasing it;<br>
 -4  &nbsp;&nbsp;&nbsp;other problems encountered, such as: <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\<classif\> is not  relevant for this puzzle (e.g. applying the BpB rating to a puzzle in T&E(3)); check the T&E-depth of this puzzle;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\<classif\> is not  relevant for this puzzle (e.g. applying the BxB classification to a puzzle in T&E(3)); check the T&E-depth of this puzzle;<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\<max-length\> is too small for this puzzle (in case \<classif\> = B); try increasing it; note that if you increase \<max-length\>, you may also have to increase \<max-time\> and/or \<buffer-size\>.<br><br>
 
 Notice that, in the \<classif\> = B case, what is computed is actually a **_truncated B rating_**, with all the values above \<max-length\> leading to output -4. <br>

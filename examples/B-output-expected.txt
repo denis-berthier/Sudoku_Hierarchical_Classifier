@@ -1,4 +1,4 @@
-*** Rating B  input file = examples/B-input.txt  max-length = 9  buffer-size = 70000  max-time = 10
+*** SHC version 5.6  Rating B   input file = examples/B-input.txt  max-length = 9  buffer-size = 500000  max-time = 10
 0
 0
 0

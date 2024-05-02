@@ -1,4 +1,4 @@
-*** Rating TE-depth     input file = examples/TE-input.txt
+*** SHC version 5.6  Rating TE-depth   input file = examples/TE-input.txt
 0
 0
 0

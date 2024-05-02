@@ -1,5 +1,5 @@
-SHC will run under the following conditions:
-*******************************************
+SHC version 5.6 will run under the following conditions:
+*******************************************************
 Rating category: TE-depth
 Rating all puzzles in this file: examples/TE-input.txt
 Output file: examples/TE-output.txt
@@ -121,7 +121,7 @@ Puzzle 113  T&E-depth = 2  Time = 0s  Cumulated time = 0s
 Puzzle 114  T&E-depth = 2  Time = 0s  Cumulated time = 0s
 Puzzle 115  T&E-depth = 2  Time = 0s  Cumulated time = 0s
 Puzzle 116  T&E-depth = 2  Time = 0s  Cumulated time = 0s
-Puzzle 117  T&E-depth = 2  Time = 0s  Cumulated time = 1s
+Puzzle 117  T&E-depth = 2  Time = 0s  Cumulated time = 0s
 Puzzle 118  T&E-depth = 2  Time = 0s  Cumulated time = 1s
 Puzzle 119  T&E-depth = 2  Time = 0s  Cumulated time = 1s
 Puzzle 120  T&E-depth = 2  Time = 0s  Cumulated time = 1s
@@ -306,7 +306,7 @@ Puzzle 298  T&E-depth = 3  Time = 0s  Cumulated time = 12s
 Puzzle 299  T&E-depth = 3  Time = 0s  Cumulated time = 12s
 Puzzle 300  T&E-depth = 3  Time = 0s  Cumulated time = 12s
 Puzzle 301  T&E-depth = 3  Time = 0s  Cumulated time = 12s
-Puzzle 302  T&E-depth = 3  Time = 0s  Cumulated time = 12s
+Puzzle 302  T&E-depth = 3  Time = 0s  Cumulated time = 13s
 Puzzle 303  T&E-depth = 3  Time = 0s  Cumulated time = 13s
 Puzzle 304  T&E-depth = 3  Time = 0s  Cumulated time = 13s
 Puzzle 305  T&E-depth = 3  Time = 0s  Cumulated time = 13s
@@ -331,7 +331,7 @@ Puzzle 323  T&E-depth = 3  Time = 0s  Cumulated time = 15s
 Puzzle 324  T&E-depth = 3  Time = 0s  Cumulated time = 15s
 Puzzle 325  T&E-depth = 3  Time = 0s  Cumulated time = 15s
 Puzzle 326  T&E-depth = 3  Time = 0s  Cumulated time = 15s
-Puzzle 327  T&E-depth = 3  Time = 0s  Cumulated time = 15s
+Puzzle 327  T&E-depth = 3  Time = 0s  Cumulated time = 16s
 Puzzle 328  T&E-depth = 3  Time = 0s  Cumulated time = 16s
 Puzzle 329  T&E-depth = 3  Time = 0s  Cumulated time = 16s
 Puzzle 330  T&E-depth = 3  Time = 0s  Cumulated time = 16s
@@ -351,4 +351,3 @@ Number of examined puzzles: 342
 Number of unsolved puzzles: 0
 
 Execution finished.
-Press the enter key to exit.

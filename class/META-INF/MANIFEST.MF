@@ -1,4 +1,4 @@
-Manifest-Version: 1.0
+Manifest-Version: 5.6
 Name: SHC
 Created-By: 1.8.0_331 (Oracle Corporation)
 Main-Class: SHC.U
