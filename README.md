@@ -7,7 +7,7 @@
 The development of the SHC was based on the same references as CSP-Rules or SudoRules (recalled at the end) but the implementations were totally independent.<br>
 All the classification results of the SHC and of SudoRules completely coincide on the large collections of puzzles used to compare them.<br>
 The SHC is much faster than SudoRules for the functionalities it implements. <br>
-It is hoped that the T&E-depth and BxB parts will be very useful in the search for the "hardest" puzzles.<br><br>
+As shown by recent discoveries of hard puzzles, the T&E-depth and BxB parts have been very useful in the search for the "hardest" puzzles.<br><br>
 For full details about the concepts and theories underlying the SHC, see [CRT] or [PBCS].<br>
 For a much shorter (almost) self-contained introduction to them and for the analysis of some of the SHC results, see [HCCS].<br><br>
 
@@ -67,8 +67,8 @@ by default, \<auto-end\> is true and the process fully terminates at the end of 
 
 The following three options should be present only in case \<classif\> = B or BxB; if any of them is present in an other case, a warning will be issued and it will be merely ignored:<br>
 **▸**	\<max-length\> is an integer, the maximal length allowed for braids, with default value 8 in case \<classif\> = B and 14 in case \<classif\> = BxB; the purpose is to avoid too long calculations of the B rating for very hard puzzles in T&E(1), but to leave a wide margin of possibilities for the BxB classification, allowing to find extreme T&E(2) puzzles up to the highest known ones (i.e. up to B14B); note that pre-checking that the puzzle(s) is (are) in T&E(1) or T&E(2) is under the user’s responsibility;<br>
-**▸**	\<max-time\> is an integer, the maximum time (with default value 10), in minutes, allowed for the computation of each puzzle in the input file or for \<puzzle\>; it applies only to the case \<classif\> = B;<br>
-**▸**	\<buffer-size\> is an integer defining the maximum number of partial braids the program can store; default value is 500,000 if \<classif\>= B or BxB; change it only if it is too small; <br>
+**▸**	\<max-time\> is an integer, the maximum time (with default value infinite), in minutes, allocated to the computation of all the puzzles in the input file; it applies only to the case \<classif\> = B. Warning to users of previous releases: this no longer applies to individual puzzles in the input file;<br>
+**▸**	\<buffer-size\> is an integer defining the maximum number of partial braids the program can store; default value is 1,000,000 if \<classif\>= B or BxB; change it only if it is too small; <br>
 
 **▸**	\<puzzle\> is all that remains in the command line after all the options (but only the first 81 caracters after -puzzle are effectively considered); \<puzzle\> is the standard line representation of a sudoku puzzle; when \<puzzle\> is present, it will be ignored if -examples is specified, as stated previously; no -input or -output may be specified; if they are present, they will be ignored; for  technical reasons, \<puzzle\> may not contain any space or semi-colon; it may contain e.g. underscores instead.<br><br>
 
@@ -78,7 +78,7 @@ The following three options should be present only in case \<classif\> = B or Bx
 For any puzzle, the result of each of the four classifications is an integer, normally positive or null.<br>
 However, it may take negative values in the following cases (with corresponding remediations):<br>
 -1  &nbsp;&nbsp;&nbsp;this puzzle is not in the right format, or it has no solution, or it has several solutions; check your puzzle;<br>
--2  &nbsp;&nbsp;&nbsp;\<max-time\> allowed is too short for this puzzle; try increasing it;<br>
+-2  &nbsp;&nbsp;&nbsp;after the change of meaning for \<max-time\>, this value will no longer appear;<br>
 -3  &nbsp;&nbsp;&nbsp;\<buffer-size\> is too small for this puzzle; try increasing it;<br>
 -4  &nbsp;&nbsp;&nbsp;other problems encountered, such as: <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\<classif\> is not  relevant for this puzzle (e.g. applying the BxB classification to a puzzle in T&E(3)); check the T&E-depth of this puzzle;<br>
@@ -112,7 +112,9 @@ with all the options working the same way as in SHC.jar.<br><br>
 ### References
 
 [CRT]: BERTHIER D., Constraint Resolution Theories, Lulu.com Publishers, November 2011.<br>
-[HCCS]: BERTHIER D., Hierarchical Classifications in Constraint Satisfaction, Lulu Press, October 2023.<br>
+[HCCS1]: BERTHIER D., Hierarchical Classifications in Constraint Satisfaction, Lulu Press, October 2023.<br>
+[HCCS2]: BERTHIER D., Hierarchical Classifications in Constraint Satisfaction (Second Edition), Lulu Press, July 2024.<br>
+[HCCS]: any of [HCCS1] or [HCCS2].<br>
 [PBCS1]: BERTHIER D., Pattern-Based Constraint Satisfaction and Logic Puzzles (First Edition), Lulu Press, November 2012.<br>
 [PBCS2]: BERTHIER D., Pattern-Based Constraint Satisfaction and Logic Puzzles (Second Edition), Lulu Press, July 2015.<br>
 [PBCS3]: BERTHIER D., Pattern-Based Constraint Satisfaction and Logic Puzzles (Third Edition), Lulu Press, Novembre 2021.<br>

@@ -1,4 +1,4 @@
-SHC version 5.6 will run under the following conditions:
+SHC version 6.1 will run under the following conditions:
 *******************************************************
 Rating category: TE-depth
 Rating all puzzles in this file: examples/TE-input.txt
@@ -223,13 +223,13 @@ Puzzle 215  T&E-depth = 3  Time = 0s  Cumulated time = 3s
 Puzzle 216  T&E-depth = 3  Time = 0s  Cumulated time = 3s
 Puzzle 217  T&E-depth = 3  Time = 0s  Cumulated time = 3s
 Puzzle 218  T&E-depth = 3  Time = 0s  Cumulated time = 3s
-Puzzle 219  T&E-depth = 3  Time = 0s  Cumulated time = 4s
+Puzzle 219  T&E-depth = 3  Time = 0s  Cumulated time = 3s
 Puzzle 220  T&E-depth = 3  Time = 0s  Cumulated time = 4s
 Puzzle 221  T&E-depth = 3  Time = 0s  Cumulated time = 4s
 Puzzle 222  T&E-depth = 3  Time = 0s  Cumulated time = 4s
 Puzzle 223  T&E-depth = 3  Time = 0s  Cumulated time = 4s
 Puzzle 224  T&E-depth = 3  Time = 0s  Cumulated time = 4s
-Puzzle 225  T&E-depth = 3  Time = 0s  Cumulated time = 5s
+Puzzle 225  T&E-depth = 3  Time = 0s  Cumulated time = 4s
 Puzzle 226  T&E-depth = 3  Time = 0s  Cumulated time = 5s
 Puzzle 227  T&E-depth = 3  Time = 0s  Cumulated time = 5s
 Puzzle 228  T&E-depth = 3  Time = 0s  Cumulated time = 5s
@@ -237,7 +237,7 @@ Puzzle 229  T&E-depth = 3  Time = 0s  Cumulated time = 5s
 Puzzle 230  T&E-depth = 3  Time = 0s  Cumulated time = 5s
 Puzzle 231  T&E-depth = 3  Time = 0s  Cumulated time = 5s
 Puzzle 232  T&E-depth = 3  Time = 0s  Cumulated time = 5s
-Puzzle 233  T&E-depth = 3  Time = 0s  Cumulated time = 6s
+Puzzle 233  T&E-depth = 3  Time = 0s  Cumulated time = 5s
 Puzzle 234  T&E-depth = 3  Time = 0s  Cumulated time = 6s
 Puzzle 235  T&E-depth = 3  Time = 0s  Cumulated time = 6s
 Puzzle 236  T&E-depth = 3  Time = 0s  Cumulated time = 6s
@@ -245,7 +245,7 @@ Puzzle 237  T&E-depth = 3  Time = 0s  Cumulated time = 6s
 Puzzle 238  T&E-depth = 3  Time = 0s  Cumulated time = 6s
 Puzzle 239  T&E-depth = 3  Time = 0s  Cumulated time = 6s
 Puzzle 240  T&E-depth = 3  Time = 0s  Cumulated time = 6s
-Puzzle 241  T&E-depth = 3  Time = 0s  Cumulated time = 7s
+Puzzle 241  T&E-depth = 3  Time = 0s  Cumulated time = 6s
 Puzzle 242  T&E-depth = 3  Time = 0s  Cumulated time = 7s
 Puzzle 243  T&E-depth = 3  Time = 0s  Cumulated time = 7s
 Puzzle 244  T&E-depth = 3  Time = 0s  Cumulated time = 7s
@@ -255,7 +255,7 @@ Puzzle 247  T&E-depth = 3  Time = 0s  Cumulated time = 7s
 Puzzle 248  T&E-depth = 3  Time = 0s  Cumulated time = 7s
 Puzzle 249  T&E-depth = 3  Time = 0s  Cumulated time = 7s
 Puzzle 250  T&E-depth = 3  Time = 0s  Cumulated time = 7s
-Puzzle 251  T&E-depth = 3  Time = 0s  Cumulated time = 8s
+Puzzle 251  T&E-depth = 3  Time = 0s  Cumulated time = 7s
 Puzzle 252  T&E-depth = 3  Time = 0s  Cumulated time = 8s
 Puzzle 253  T&E-depth = 3  Time = 0s  Cumulated time = 8s
 Puzzle 254  T&E-depth = 3  Time = 0s  Cumulated time = 8s
@@ -263,16 +263,16 @@ Puzzle 255  T&E-depth = 3  Time = 0s  Cumulated time = 8s
 Puzzle 256  T&E-depth = 3  Time = 0s  Cumulated time = 8s
 Puzzle 257  T&E-depth = 3  Time = 0s  Cumulated time = 8s
 Puzzle 258  T&E-depth = 3  Time = 0s  Cumulated time = 8s
-Puzzle 259  T&E-depth = 3  Time = 0s  Cumulated time = 9s
-Puzzle 260  T&E-depth = 3  Time = 0s  Cumulated time = 9s
+Puzzle 259  T&E-depth = 3  Time = 0s  Cumulated time = 8s
+Puzzle 260  T&E-depth = 3  Time = 0s  Cumulated time = 8s
 Puzzle 261  T&E-depth = 3  Time = 0s  Cumulated time = 9s
 Puzzle 262  T&E-depth = 3  Time = 0s  Cumulated time = 9s
 Puzzle 263  T&E-depth = 3  Time = 0s  Cumulated time = 9s
 Puzzle 264  T&E-depth = 3  Time = 0s  Cumulated time = 9s
 Puzzle 265  T&E-depth = 3  Time = 0s  Cumulated time = 9s
 Puzzle 266  T&E-depth = 3  Time = 0s  Cumulated time = 9s
-Puzzle 267  T&E-depth = 3  Time = 0s  Cumulated time = 10s
-Puzzle 268  T&E-depth = 3  Time = 0s  Cumulated time = 10s
+Puzzle 267  T&E-depth = 3  Time = 0s  Cumulated time = 9s
+Puzzle 268  T&E-depth = 3  Time = 0s  Cumulated time = 9s
 Puzzle 269  T&E-depth = 3  Time = 0s  Cumulated time = 10s
 Puzzle 270  T&E-depth = 3  Time = 0s  Cumulated time = 10s
 Puzzle 271  T&E-depth = 3  Time = 0s  Cumulated time = 10s
@@ -286,7 +286,7 @@ Puzzle 278  T&E-depth = 3  Time = 0s  Cumulated time = 10s
 Puzzle 279  T&E-depth = 3  Time = 0s  Cumulated time = 10s
 Puzzle 280  T&E-depth = 3  Time = 0s  Cumulated time = 10s
 Puzzle 281  T&E-depth = 3  Time = 0s  Cumulated time = 10s
-Puzzle 282  T&E-depth = 3  Time = 0s  Cumulated time = 11s
+Puzzle 282  T&E-depth = 3  Time = 0s  Cumulated time = 10s
 Puzzle 283  T&E-depth = 3  Time = 0s  Cumulated time = 11s
 Puzzle 284  T&E-depth = 3  Time = 0s  Cumulated time = 11s
 Puzzle 285  T&E-depth = 3  Time = 0s  Cumulated time = 11s
@@ -294,7 +294,7 @@ Puzzle 286  T&E-depth = 3  Time = 0s  Cumulated time = 11s
 Puzzle 287  T&E-depth = 3  Time = 0s  Cumulated time = 11s
 Puzzle 288  T&E-depth = 3  Time = 0s  Cumulated time = 11s
 Puzzle 289  T&E-depth = 3  Time = 0s  Cumulated time = 11s
-Puzzle 290  T&E-depth = 3  Time = 0s  Cumulated time = 12s
+Puzzle 290  T&E-depth = 3  Time = 0s  Cumulated time = 11s
 Puzzle 291  T&E-depth = 3  Time = 0s  Cumulated time = 12s
 Puzzle 292  T&E-depth = 3  Time = 0s  Cumulated time = 12s
 Puzzle 293  T&E-depth = 3  Time = 0s  Cumulated time = 12s
@@ -306,22 +306,22 @@ Puzzle 298  T&E-depth = 3  Time = 0s  Cumulated time = 12s
 Puzzle 299  T&E-depth = 3  Time = 0s  Cumulated time = 12s
 Puzzle 300  T&E-depth = 3  Time = 0s  Cumulated time = 12s
 Puzzle 301  T&E-depth = 3  Time = 0s  Cumulated time = 12s
-Puzzle 302  T&E-depth = 3  Time = 0s  Cumulated time = 13s
-Puzzle 303  T&E-depth = 3  Time = 0s  Cumulated time = 13s
+Puzzle 302  T&E-depth = 3  Time = 0s  Cumulated time = 12s
+Puzzle 303  T&E-depth = 3  Time = 0s  Cumulated time = 12s
 Puzzle 304  T&E-depth = 3  Time = 0s  Cumulated time = 13s
 Puzzle 305  T&E-depth = 3  Time = 0s  Cumulated time = 13s
 Puzzle 306  T&E-depth = 3  Time = 0s  Cumulated time = 13s
 Puzzle 307  T&E-depth = 3  Time = 0s  Cumulated time = 13s
 Puzzle 308  T&E-depth = 3  Time = 0s  Cumulated time = 13s
 Puzzle 309  T&E-depth = 3  Time = 0s  Cumulated time = 13s
-Puzzle 310  T&E-depth = 3  Time = 0s  Cumulated time = 14s
+Puzzle 310  T&E-depth = 3  Time = 0s  Cumulated time = 13s
 Puzzle 311  T&E-depth = 3  Time = 0s  Cumulated time = 14s
 Puzzle 312  T&E-depth = 3  Time = 0s  Cumulated time = 14s
 Puzzle 313  T&E-depth = 3  Time = 0s  Cumulated time = 14s
 Puzzle 314  T&E-depth = 3  Time = 0s  Cumulated time = 14s
 Puzzle 315  T&E-depth = 3  Time = 0s  Cumulated time = 14s
 Puzzle 316  T&E-depth = 3  Time = 0s  Cumulated time = 14s
-Puzzle 317  T&E-depth = 3  Time = 0s  Cumulated time = 15s
+Puzzle 317  T&E-depth = 3  Time = 0s  Cumulated time = 14s
 Puzzle 318  T&E-depth = 3  Time = 0s  Cumulated time = 15s
 Puzzle 319  T&E-depth = 3  Time = 0s  Cumulated time = 15s
 Puzzle 320  T&E-depth = 3  Time = 0s  Cumulated time = 15s
@@ -331,16 +331,16 @@ Puzzle 323  T&E-depth = 3  Time = 0s  Cumulated time = 15s
 Puzzle 324  T&E-depth = 3  Time = 0s  Cumulated time = 15s
 Puzzle 325  T&E-depth = 3  Time = 0s  Cumulated time = 15s
 Puzzle 326  T&E-depth = 3  Time = 0s  Cumulated time = 15s
-Puzzle 327  T&E-depth = 3  Time = 0s  Cumulated time = 16s
-Puzzle 328  T&E-depth = 3  Time = 0s  Cumulated time = 16s
+Puzzle 327  T&E-depth = 3  Time = 0s  Cumulated time = 15s
+Puzzle 328  T&E-depth = 3  Time = 0s  Cumulated time = 15s
 Puzzle 329  T&E-depth = 3  Time = 0s  Cumulated time = 16s
 Puzzle 330  T&E-depth = 3  Time = 0s  Cumulated time = 16s
 Puzzle 331  T&E-depth = 3  Time = 0s  Cumulated time = 16s
 Puzzle 332  T&E-depth = 3  Time = 0s  Cumulated time = 16s
 Puzzle 333  T&E-depth = 3  Time = 0s  Cumulated time = 16s
 Puzzle 334  T&E-depth = 3  Time = 0s  Cumulated time = 16s
-Puzzle 335  T&E-depth = 3  Time = 0s  Cumulated time = 17s
-Puzzle 336  T&E-depth = 3  Time = 0s  Cumulated time = 17s
+Puzzle 335  T&E-depth = 3  Time = 0s  Cumulated time = 16s
+Puzzle 336  T&E-depth = 3  Time = 0s  Cumulated time = 16s
 Puzzle 337  T&E-depth = 3  Time = 0s  Cumulated time = 17s
 Puzzle 338  T&E-depth = 3  Time = 0s  Cumulated time = 17s
 Puzzle 339  T&E-depth = 3  Time = 0s  Cumulated time = 17s

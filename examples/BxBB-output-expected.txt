@@ -1,4 +1,4 @@
-*** SHC version 5.6  Rating BxBB   input file = examples/BxBB-input.txt  max-length = 5  buffer-size = 30000
+*** SHC version 6.1  Rating BxBB   input file = examples/BxBB-input.txt  max-length = 9  buffer-size = 50000
 2
 2
 2
