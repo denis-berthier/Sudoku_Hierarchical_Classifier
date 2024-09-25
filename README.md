@@ -64,7 +64,7 @@ however, if -examples is selected, \<erase\> is automatically set to true and ca
 **▸**	\<auto-end\> := true | false;<br>
 by default, \<auto-end\> is true and the process fully terminates at the end of the computations; set \<auto-end\> to false if you want to recover the previous behaviour (preventing the Windows console to close at the end of the computations, so that you have time to check the messages in the console); this option can be completely ignored by non-Windows users; having \<auto-end\> true by default will allow to more easily include SHC in scripts (in particular in the search for hard puzzles);<br>
 
-**▸**	\<max-time\> is an integer, the maximum time (with default value infinite), in minutes, allocated to the computation of all the puzzles in the input file; it applies only to the case \<classif\> = B. Warning to users of previous releases: this no longer applies to individual puzzles in the input file.<br>
+**▸**	\<max-time\> is an integer, the maximum time (with default value infinite), in minutes, allocated to the computation of all the puzzles in the input file. Warning to users of previous releases: this no longer applies to individual puzzles in the input file.<br>
 
 
 The following two options should be present only in case \<classif\> = B or BxB; if any of them is present in an other case, a warning will be issued and it will be merely ignored:<br>
