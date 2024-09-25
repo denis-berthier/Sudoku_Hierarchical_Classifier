@@ -45,7 +45,7 @@ Expand.jar<br><br>
 As SHC is a Java program, you must first make sure you have Java installed on your machine.<br>
 The executable version of the SHC is a typical .jar file, SHC.jar, in the SHC root directory. As such, it is launched in that directory, in a standard way, by the following command line:<br>
 
-**java -jar SHC.jar \<classif\> (-examples) (-input \<input-file\>) (-output \<output-file\>) (-erase \<erase\>) (-auto-end \<auto-end\>) (-max-length \<max-length\>) (-max-time \<max-time\>) (-buffer-size \<buffer-size\>) (-puzzle \<puzzle>\)**<br><br>
+**java -jar SHC.jar \<classif\> (-examples) (-input \<input-file\>) (-output \<output-file\>) (-erase \<erase\>) (-auto-end \<auto-end\>) (-max-time \<max-time\>) (-max-length \<max-length\>) (-buffer-size \<buffer-size\>) (-puzzle \<puzzle>\)**<br><br>
 where:<br>
 **▸**	parts within parentheses are optional;<br>
 **▸**	a - sign at the start of a keyword recalls that the choice is possible but not mandatory;<br>
@@ -62,12 +62,13 @@ you may change this behaviour by specifying "-erase false"; this will allow you 
 however, if -examples is selected, \<erase\> is automatically set to true and can't be changed; the reason is to allow easy comparisons with the expected results.<br>
 
 **▸**	\<auto-end\> := true | false;<br>
-by default, \<auto-end\> is true and the process fully terminates at the end of the computations; set \<auto-end\> to false if you want to recover the previous behaviour (preventing the Windows console to close at the end of the computations, so that you have time to check the messages in the console); this option can be completely ignored by non-Windows users; having \<auto-end\> true by default will allow to more easily include SHC in scripts (in particular in the search for hard puzzles).<br>
+by default, \<auto-end\> is true and the process fully terminates at the end of the computations; set \<auto-end\> to false if you want to recover the previous behaviour (preventing the Windows console to close at the end of the computations, so that you have time to check the messages in the console); this option can be completely ignored by non-Windows users; having \<auto-end\> true by default will allow to more easily include SHC in scripts (in particular in the search for hard puzzles);<br>
+
+**▸**	\<max-time\> is an integer, the maximum time (with default value infinite), in minutes, allocated to the computation of all the puzzles in the input file; it applies only to the case \<classif\> = B. Warning to users of previous releases: this no longer applies to individual puzzles in the input file.<br>
 
 
-The following three options should be present only in case \<classif\> = B or BxB; if any of them is present in an other case, a warning will be issued and it will be merely ignored:<br>
+The following two options should be present only in case \<classif\> = B or BxB; if any of them is present in an other case, a warning will be issued and it will be merely ignored:<br>
 **▸**	\<max-length\> is an integer, the maximal length allowed for braids, with default value 8 in case \<classif\> = B and 14 in case \<classif\> = BxB; the purpose is to avoid too long calculations of the B rating for very hard puzzles in T&E(1), but to leave a wide margin of possibilities for the BxB classification, allowing to find extreme T&E(2) puzzles up to the highest known ones (i.e. up to B14B); note that pre-checking that the puzzle(s) is (are) in T&E(1) or T&E(2) is under the user’s responsibility;<br>
-**▸**	\<max-time\> is an integer, the maximum time (with default value infinite), in minutes, allocated to the computation of all the puzzles in the input file; it applies only to the case \<classif\> = B. Warning to users of previous releases: this no longer applies to individual puzzles in the input file;<br>
 **▸**	\<buffer-size\> is an integer defining the maximum number of partial braids the program can store; default value is 1,000,000 if \<classif\>= B or BxB; change it only if it is too small; <br>
 
 **▸**	\<puzzle\> is all that remains in the command line after all the options (but only the first 81 caracters after -puzzle are effectively considered); \<puzzle\> is the standard line representation of a sudoku puzzle; when \<puzzle\> is present, it will be ignored if -examples is specified, as stated previously; no -input or -output may be specified; if they are present, they will be ignored; for  technical reasons, \<puzzle\> may not contain any space or semi-colon; it may contain e.g. underscores instead.<br><br>
